@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationTutorial", "AuthenticationTutorial\AuthenticationTutorial.csproj", "{BB6CE12A-3519-4524-A96F-0284EE793AB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationTutorial", "AuthenticationTutorial\AuthenticationTutorial.csproj", "{BB6CE12A-3519-4524-A96F-0284EE793AB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityExample", "IdentityExample\IdentityExample.csproj", "{F326A8C0-0B9B-44A8-9108-F543878B7D52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BB6CE12A-3519-4524-A96F-0284EE793AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB6CE12A-3519-4524-A96F-0284EE793AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB6CE12A-3519-4524-A96F-0284EE793AB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F326A8C0-0B9B-44A8-9108-F543878B7D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F326A8C0-0B9B-44A8-9108-F543878B7D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F326A8C0-0B9B-44A8-9108-F543878B7D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F326A8C0-0B9B-44A8-9108-F543878B7D52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
