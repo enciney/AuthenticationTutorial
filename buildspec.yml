@@ -15,8 +15,4 @@ phases:
 artifacts:
   files:
     - IdentityExample/bin/Debug/net5.0/linux-x64/publish/**/*
-<<<<<<< HEAD
   base-directory: './build_output'
-=======
-  base-directory: './build_output'
->>>>>>> 6c4e8d888c89998b3ca508ada3382cfdd24a3ede
