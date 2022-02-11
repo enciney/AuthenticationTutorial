@@ -15,4 +15,4 @@ phases:
 artifacts:
   files:
     - IdentityExample/bin/Debug/net5.0/linux-x64/publish/**/*
-  base-directory: './build_output'
+  discard-paths: yes
