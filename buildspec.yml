@@ -10,21 +10,21 @@ phases:
   pre_build:
     commands:
       - echo Restore started on `date`
-      - dotnet restore AuthenticationTutorial.csproj
-      - dotnet restore IdentityExample.csproj
+      - dotnet restore AuthenticationTutorial/AuthenticationTutorial.csproj
+      - dotnet restore IdentityExample/IdentityExample.csproj
       
   build:
     commands:
       - echo Build started on `date`
-      - dotnet build AuthenticationTutorial.csproj
-      - dotnet build IdentityExample.csproj
+      - dotnet build AuthenticationTutorial/AuthenticationTutorial.csproj
+      - dotnet build IdentityExample/IdentityExample.csproj
       
   post_build:
     commands:
       - echo Publish started on `date`
       # https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-linux-platform-bundle-app.html
-      - dotnet publish -c Release -r linux-x64 --self-contained false AuthenticationTutorial.csproj
-      - dotnet publish -c Release -r linux-x64 --self-contained false IdentityExample.csproj
+      - dotnet publish -c Release -r linux-x64 --self-contained false AuthenticationTutorial/AuthenticationTutorial.csproj
+      - dotnet publish -c Release -r linux-x64 --self-contained false IdentityExample/IdentityExample.csproj
       
 artifacts:
   files:
