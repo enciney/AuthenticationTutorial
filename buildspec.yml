@@ -9,11 +9,13 @@ phases:
  pre_build:
     commands:
       - echo Restore started on `date`
-      - dotnet restore WebApplicationSample/WebApplicationSample.csproj
+      - dotnet restore AuthenticationTutorial/AuthenticationTutorial.csproj
+       dotnet restore IdentityExample/IdentityExample.csproj
   build:
     commands:
       - echo Build started on `date`
-      - dotnet publish -c release -o ./build_output WebApplicationSample/WebApplicationSample.csproj
+      - dotnet publish -c release -o ./build_output AuthenticationTutorial/AuthenticationTutorial.csproj
+      - dotnet publish -c release -o ./build_output IdentityExample/IdentityExample.csproj
 artifacts:
   files:
     - ./**/*
