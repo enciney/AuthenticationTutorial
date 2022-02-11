@@ -6,15 +6,13 @@ phases:
       dotnet: 5.0 
  pre_build:
     commands:
-      - echo Restore started on `date`
-      - dotnet restore AuthenticationTutorial/AuthenticationTutorial.csproj
+      - echo Restore started on `date`    
        dotnet restore IdentityExample/IdentityExample.csproj
   build:
     commands:
       - echo Build started on `date`
-      - dotnet publish -c release -o ./build_output AuthenticationTutorial/AuthenticationTutorial.csproj
-      - dotnet publish -c release -o ./build_output IdentityExample/IdentityExample.csproj
+      - dotnet publish -r linux-x64 IdentityExample/IdentityExample.csproj
 artifacts:
   files:
-    - ./**/*
+    - IdentityExample/bin/Debug/net5.0/linux-x64/publish/**/*
   base-directory: './build_output'
