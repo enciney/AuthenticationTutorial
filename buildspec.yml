@@ -23,8 +23,8 @@ phases:
     commands:
       - echo Publish started on `date`
       # https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-linux-platform-bundle-app.html
-      - dotnet publish -c Debug -r linux-x64 -o ./ AuthenticationTutorial/AuthenticationTutorial.csproj
-      - dotnet publish -c Debug -r linux-x64 -o ./ IdentityExample/IdentityExample.csproj
+      - dotnet publish -c Debug -r linux-x64 -o AuthenticationTutorial\bin\Debug\net5.0\linux-x64  AuthenticationTutorial/AuthenticationTutorial.csproj
+      - dotnet publish -c Debug -r linux-x64 -o IdentityExample\bin\Debug\net5.0\linux-x64 IdentityExample/IdentityExample.csproj
       
 artifacts:
   files:
